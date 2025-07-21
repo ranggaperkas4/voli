@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Tidak ada scroll */
+}
+
+.register-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 0;
+}
+
+.register-box {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; /* mencegah isi box meluber */
+}
+
+.form-section {
+  flex: 1;
+  padding: 2rem;
+  min-width: 300px;
+}
+
+.image-section {
+  flex: 1;
+  background-color: #e9ecef;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.image-section img {
+  max-height: 300px;
+  width: auto;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+}
+
+.form-container {
+  max-width: 960px;
+  width: 100%;
+}

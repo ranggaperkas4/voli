@@ -1,0 +1,151 @@
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsl(229, 85%, 46%);
+  color: white;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  min-height: 50px;
+}
+
+.navbar-left .navbar-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 70vw; /* batasi lebar kanan */
+  box-sizing: border-box;
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.navbar-right a:hover {
+  background-color: #003366;
+}
+
+.logout-btn {
+  background-color: #d9534f;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white !important;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px; /* sesuaikan dengan tinggi navbar */
+  overflow-x: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    max-width: 100%;
+  }
+}
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .featured-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .featured-section h2 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .featured-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .destination-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .card-content .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: hsl(229, 85%, 46%);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-content .btn:hover {
+      background-color: #2b3ac0;
+    }
